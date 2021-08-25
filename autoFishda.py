@@ -57,7 +57,7 @@ while time.time() - start < 90.0:
     im = Image.open(fname).crop((0,230,500,254))
     text = tool.image_to_string(im,lang = 'eng',builder = pyocr.builders.TextBuilder())
     print(text)
-    element.send_keys(text)
+
 
 input("何か入力してください")
 driver.close()
